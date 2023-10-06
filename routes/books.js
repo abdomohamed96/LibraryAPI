@@ -11,9 +11,9 @@ const {
 
 
 router.get("/",getAllBooks);
+router.post("/",createBook);
 router.get("/:id",getBookById);
 router.patch("/:id",updateBookById);
 router.delete("/:id",deleteBookById);
-router.post("/:id",createBook);
-
+ 
 module.exports=router;
